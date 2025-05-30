@@ -9,6 +9,7 @@ import 'package:injectable/injectable.dart';
 //No se sabe si los datos vienen de API, SQLLite, etc
 @injectable
 class GetNotesUsecase {
+  //Inyeccion de dependencias
   final NoteRepository _repository;
   GetNotesUsecase(this._repository);
 

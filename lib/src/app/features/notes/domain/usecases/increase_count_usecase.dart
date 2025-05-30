@@ -2,11 +2,10 @@ import 'package:flutter_clean_arquitecture/src/app/features/notes/domain/reposit
 import 'package:injectable/injectable.dart';
 
 @injectable
-class DecreaseCountUsecas {
+class IncreaseCountUsecase {
   final NoteRepository _repository;
-  DecreaseCountUsecas(this._repository);
-
+  IncreaseCountUsecase(this._repository);
   Future<void> call() async {
-    return _repository.decreaseFavouriteCount();
+    _repository.increaseFavouriteNoteCount();
   }
 }
